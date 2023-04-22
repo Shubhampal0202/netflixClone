@@ -1,0 +1,50 @@
+.row {
+  padding: 1rem;
+  background-color: rgb(24, 23, 23);
+  > h2 {
+    margin: 0.3rem;
+    color: white;
+    font-weight: 400;
+  }
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: auto;
+}
+
+.movieImage {
+  width: 200px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: transform 0.5s;
+  &:hover {
+    transform: translatey(-8px) scale(1.01);
+  }
+}
+
+.genre-cont {
+  padding: 0.5rem;
+  background-color: rgb(24, 23, 23);
+  overflow-x: auto;
+  display: flex;
+
+  > a {
+    text-decoration: none;
+    text-align: center;
+    margin: 0.3rem;
+    font-size: 14px;
+    color: black;
+    padding: 0.8rem 0;
+    min-width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 0.5s;
+    border-radius: 6px;
+    &:hover {
+      background-color: rgb(235, 231, 225);
+    }
+  }
+}
